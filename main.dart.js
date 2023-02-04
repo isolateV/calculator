@@ -55646,9 +55646,7 @@ break
 case 3:j=n/s
 break
 default:j=0}}}else n=0
-s=this.XJ(n)
-this.b=s
-this.b=A.adr(B.d.a0x(s,10))
+this.b=A.adr(B.d.a0x(this.XJ(n),10))
 return r}}
 A.Bo.prototype={
 N(a){var s=null
@@ -55669,23 +55667,24 @@ if(r.e){r.e=!1
 s=r.c
 if(B.c.v(s,"-"))r.c=B.c.cI(s,1)}else{r.e=!0
 r.c="-"+r.c}this.kz()},
-qA(a){var s,r,q,p,o=this
-if(o.f===3){s=o.r
+qA(a){var s,r,q,p=this,o=p.f
+if(o===0)return
+if(o===3){s=p.r
 r=B.d.gkN(s)
-o.pe()
-q=o.d
-q===$&&A.b()
-q.c=B.d.i(s)
-q=o.d
-q.a=!1
-q.e=r}q=o.d
-q===$&&A.b()
-if(q.a&&o.f!==0)q.b=a
-else{o.f=2
-p=new A.nP()
-p.b=a
-o.c.push(p)
-o.d=p}o.kz()},
+p.pe()
+o=p.d
+o===$&&A.b()
+o.c=B.d.i(s)
+o=p.d
+o.a=!1
+o.e=r}o=p.d
+o===$&&A.b()
+if(o.a&&p.f!==0)o.b=a
+else{p.f=2
+q=new A.nP()
+q.b=a
+p.c.push(q)
+p.d=q}p.kz()},
 pe(){var s,r=this
 r.d=new A.nP()
 s=A.a([],t.yi)
@@ -55700,8 +55699,7 @@ s===$&&A.b()
 if(!s.a){s.e=!1
 s.c=""
 s.a=!0
-if(q===1)r.f=0
-else r.f=2}}r.kz()},
+if(q===1)r.f=0}}r.kz()},
 a_V(){var s,r=this,q=r.b
 q===$&&A.b()
 if(q.a_M(r.c)){q=r.b.b
